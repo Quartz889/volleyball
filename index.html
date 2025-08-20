@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute cinema</title>
+    <style>
+        .pirmi {
+            text-align: center;
+            border: 5px outset red;
+            background-color: lightblue; 
+            display: inline-block; 
+            padding: 10px 20px;
+        }
+        .kelinys {
+            text-align: center;
+            border: 5px outset red;
+            background-color: lightblue; 
+            display: inline-block; 
+            padding: 10px 20px;
+        }
+        .antri {
+            text-align: center;
+            border: 5px outset red;
+            background-color: lightblue; 
+            display: inline-block; 
+            padding: 10px 20px;
+        }
+        .keliny {
+            text-align: center;
+            border: 5px outset red;
+            background-color: lightblue; 
+            display: inline-block; 
+            padding: 5px 5px;
+        }
+        .next {
+            text-align: center;
+            border: 5px outset red;
+            background-color: lightblue; 
+            display: inline-block; 
+            padding: 5px 5px;
+        }
+        .topas {
+            text-align: center;
+            border: 5px outset red;
+            background-color: lightblue; 
+            display: inline-block; 
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body style="background-color: lightskyblue;">
+    <!--<h1>Counter: <span id="counter">0</span></h1> 
+    <h1>Counter: <span id="yes">atnaujinama</span></h1>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+
+    <script>
+        let count = 0;
+        //const counterDisplay = document.getElementById('counter');
+
+        function increment() {
+            count++;
+            //counterDisplay.textContent = count;
+        }
+
+        function decrement() {
+            count--;
+            //counterDisplay.textContent = count;
+        }
+
+        // You can also modify the counter directly:
+        // function setCounter(value) {
+        //     count = value;
+        //     counterDisplay.textContent = count;
+        // }
+    </script>
+    <h1>Žaidžia: <span id="zaidzia1">atnaujinama</span> prieš <span id="zaidzia2">atnaujinama</span></h1> -->
+
+    <div style="display: flex; justify-content: center; gap: 10px; text-align: center; transform-origin: top center; flex-wrap: nowrap; margin-bottom: 200px; transform: scale(2);">
+        <div>
+            <div class="pirmi">
+                <h3><span id="pavadinimas1">atnaujinama</span></h3>
+                <h1><span id="rezultatas1">atnaujinama</span></h1>
+            </div>
+        </div>
+        <div>
+            <div class="kelinys">
+                <h3><span id="kelinys">atnaujinama</span></h3>
+            </div>
+        </div>
+        <div>
+            <div class="antri">
+                <h3><span id="pavadinimas2">atnaujinama</span></h3>
+                <h1><span id="rezultatas2">atnaujinama</span></h1>
+            </div>
+        </div>
+    </div>
+    
+    <div style="justify-content: center; text-align: center; transform-origin: top center;  margin-bottom: 10px;">
+        <div class="keliny">
+            <h1>Praeiti kėliniai <span id="kelinys1">N/A</span>, <span id="kelinys2">N/A</span><span id="kelinys3">, N/A</span></h1>
+        </div>
+    </div>
+
+    <div style="justify-content: center; text-align: center; transform-origin: top center; margin-bottom: 10px;">
+        <div class="next">
+            <h1>Kiti: <span id="next1">N/A</span> prieš <span id="next2">N/A</span></h1>
+        </div>
+    </div>
+
+    <div style="justify-content: center; text-align: center; transform-origin: top center;">
+        <div class="topas">
+            <h2>Dabartiniai reitingai:</h2>
+            <h3>1. <span id="topVienas">N/A</span> su <span id="topVienasT">N/A</span> taškais</h3>
+            <h3>2. <span id="topDu">N/A</span> su <span id="topDuT">N/A</span> taškais</h3>
+            <h3>3. <span id="topTrys">N/A</span> su <span id="topTrysT">N/A</span> taškais</h3>
+            <h3>4. <span id="topKeturi">N/A</span> su <span id="topKeturiT">N/A</span> taškais</h3>
+            <h3>5. <span id="topPenki">N/A</span> su <span id="topPenkiT">N/A</span> taškais</h3>
+        </div>
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+</html>
